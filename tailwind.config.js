@@ -1,4 +1,5 @@
 module.exports = {
+  mode:"jit",
   purge: {
     mode: "all",
     content: ["./**/*.html"],
@@ -15,5 +16,7 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography"),
+            require("daisyui"), 
+           ],
 };
