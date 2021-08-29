@@ -1,9 +1,9 @@
 items:
-  - text: Google
-    url: https://www.google.com
-  - text: Zoro
-    url: zoro.to
-  - text: Admin
-    url: /admin
+  - text: Facebook
+    url: https://www.facebook.com/DrTremens/
+  - text: Instagram
+    url: https://www.instagram.com/drtremens/
+  - text: Twitter
+    url: https://twitter.com/dr_tremens
   - text: Blog
     url: /blog
