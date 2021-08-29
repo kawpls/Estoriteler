@@ -1,22 +1,24 @@
 ---
 layout: default
-title: Neat Starter
+title: Estoriteler
 path: home
 ---
 
-<div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
-  <h1>
-    Welcome to
-    <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-      {{title}}
-    </strong>
-  </h1>
-
-  <p>
-    <abbr title="netlify cms, eleventy, alpine js & tailwind css">NEAT</abbr>
-    Starter Template. Get Started by editing.
-    <code class="bg-gray-100 text-blue-800 p-1">/index.njk</code>
-  </p>
-
-  {% include "./_includes/partials/content.html" %}
+<div
+  class="hero min-h-screen"
+  style="
+    background-image: url('https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  "
+>
+  <div class="hero-overlay bg-opacity-60"></div>
+  <div class="text-center hero-content text-neutral-content">
+    <div class="max-w-md">
+      <h1 class="mb-5 text-5xl font-bold">Estoriteler</h1>
+      <p class="mb-5">
+        ¿Quién soy? Pero ya sé quién soy. Soy José Antonio González Torres, y
+        aunque he pasado por mucho
+      </p>
+      <a href="/blog" class="btn btn-wide btn-xl">Blog</a>
+    </div>
+  </div>
 </div>
