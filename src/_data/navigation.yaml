@@ -1,6 +1,6 @@
 items:
   - text: Google
-    url: www.google.com
+    url: https://www.google.com
   - text: Zoro
     url: zoro.to
   - text: Admin
