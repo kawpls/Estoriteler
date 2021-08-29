@@ -1,8 +1,8 @@
 items:
-  - text: Menu One
-    url: "#"
-  - text: Menu Two
-    url: "#"
+  - text: Google
+    url: www.google.com
+  - text: Zoro
+    url: zoro.to
   - text: Admin
     url: /admin
   - text: Blog
