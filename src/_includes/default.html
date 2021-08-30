@@ -35,7 +35,10 @@
     {% include "./partials/navbar.html" %} {{ content | safe }} {% include
     "./partials/footer.html" %}
 
-    <script src="/static/js/alpine.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
 
     {% if path == "home" %}
     <!-- Netlify Identity Widget -->
