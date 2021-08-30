@@ -16,7 +16,7 @@
   >
     <!--Logo etc-->
     <div>
-      <a href="/" class="text-indigo-500 font-bold text-lg">Logo</a>
+      <a href="/" class="text-blue-400 font-bold text-3xl">Estoriteler</a>
     </div>
 
     <!--Toggle button (hidden on large screens)-->
@@ -68,20 +68,40 @@
       >
         {% for item in navigation.items %}
         <li class="nav__item mr-3">
+          {% if '/blog' in page.url or '/posts' in page.url %}
           <a
             @click="isOpen = false"
             class="
-              text-ml
+              font-bold
+              text-lg
               inline-block
-              text-gray-500
+              text-gray-800
               no-underline
-              hover:text-indigo-500
+              hover:text-gray-400
               py-2
-              px-4
+              px-2
             "
             href="{{ item.url }}"
             >{{ item.text }}</a
           >
+
+          {%else%}
+          <a
+            @click="isOpen = false"
+            class="
+              font-bold
+              text-lg
+              inline-block
+              text-gray-300
+              no-underline
+              hover:text-red-200
+              py-2
+              px-2
+            "
+            href="{{ item.url }}"
+            >{{ item.text }}</a
+          >
+          {% endif %}
         </li>
         {% endfor %}
       </ul>
