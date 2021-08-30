@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
     <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,14 +37,7 @@
       crossorigin="anonymous"
     ></script>
     {% include "./partials/navbar.html" %} {{ content | safe }} {% include
-    "./partials/footer.html" %}
-
-    <script
-      defer
-      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
-
-    {% if path == "home" %}
+    "./partials/footer.html" %} {% if path == "home" %}
     <!-- Netlify Identity Widget -->
     <!-- Needed only if you are using Netlify Identity feature -->
     <script
