@@ -21,3 +21,18 @@ path: home
     </div>
   </div>
 </div>
+{% for item in BlogPreview.links %}
+<div class="flex card lg:card-side bordered my-4">
+  <figure>
+    <img src="{{item.imagePreview}}" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">{{item.titlePreview}}</h2>
+    <p class="my-1">{{item.authorPreview}}</p>
+    <p>{{item.descPreview}}</p>
+    <div class="card-actions justify-end">
+      <a class="btn btn-ghost" href="{{item.urlPreview}}">Seguir Leyendo</a>
+    </div>
+  </div>
+</div>
+{% endfor %}

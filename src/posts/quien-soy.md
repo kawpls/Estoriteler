@@ -1,10 +1,9 @@
 ---
-title: ¿Quién soy?
-description: "Encontrándome "
-author: José Antonio González Torres
-date: 2021-08-15T22:19:00.000Z
-tags:
-  - from
+title: quien-soy
+Name: ¿Quién soy?
+description: Encontrandome
+author: Antonio
+date: 2021-09-03T21:03:39.289Z
 ---
 Originalmente esta página iba a llevar por nombre “No sé quién soy”    como una especie de lema en el que me refugiaría para poder hacer    distintos escritos en los que continuamente buscaría un sentido a la    pregunta: ¿Quién soy?
 
