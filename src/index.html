@@ -21,18 +21,42 @@ path: home
     </div>
   </div>
 </div>
-{% for item in BlogPreview.links %}
-<div class="flex card lg:card-side bordered my-4">
-  <figure>
-    <img class="max-h-96 shadow-xl w-60" src="{{item.imagePreview}}" />
-  </figure>
-  <div class="card-body">
-    <h2 class="card-title">{{item.titlePreview}}</h2>
-    <p class="my-1">{{item.authorPreview}}</p>
-    <p>{{item.descPreview}}</p>
-    <div class="card-actions justify-end">
-      <a class="btn btn-ghost" href="{{item.urlPreview}}">Seguir Leyendo</a>
+<div class="container">
+  {% for item in BlogPreview.links %}
+  <div class="card shadow-md lg:card-side bordered my-4 mx-4">
+    <div class="">
+      <img
+        class="min-h-full min-w-full lg:max-w-lg"
+        src="{{item.imagePreview}}"
+      />
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">{{item.titlePreview}}</h2>
+      <p class="my-1">{{item.authorPreview}}</p>
+      <p>{{item.descPreview}}</p>
+      <div class="card-actions justify-end">
+        <a class="btn btn-ghost" href="{{item.urlPreview}}">Seguir Leyendo</a>
+      </div>
     </div>
   </div>
+
+  {% endfor %}
 </div>
-{% endfor %}
+<div class="lg:flex container">
+  {% for item in BlogPreview.links %}
+
+  <div class="w-full my-4 mx-2 card shadow-xl image-full">
+    <figure>
+      <img src="{{item.imagePreview}}" />
+    </figure>
+    <div class="justify-end card-body">
+      <h2 class="card-title">{{item.titlePreview}}</h2>
+      <p>{{item.descPreview}}</p>
+      <div class="card-actions">
+        <a class="btn btn-ghost" href="{{item.urlPreview}}">Seguir Leyendo</a>
+      </div>
+    </div>
+  </div>
+
+  {% endfor %}
+</div>
