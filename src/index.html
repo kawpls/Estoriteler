@@ -24,7 +24,7 @@ path: home
 {% for item in BlogPreview.links %}
 <div class="flex card lg:card-side bordered my-4">
   <figure>
-    <img src="{{item.imagePreview}}" />
+    <img class="max-h-72 w-auto" src="{{item.imagePreview}}" />
   </figure>
   <div class="card-body">
     <h2 class="card-title">{{item.titlePreview}}</h2>
