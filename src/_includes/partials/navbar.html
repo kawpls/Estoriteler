@@ -123,9 +123,11 @@ c-45 139 -264 814 -487 1500 l-404 1248 -587 0 -586 0 -6 -97 c-3 -54 -10
 163 -92 123z" />
       </g>
     </svg>
-</div> {% endif %} <div>
+</div> {% endif %} {% if '/blog' in page.url or '/posts' in page.url %} <div>
+  <a href="/" class="text-black mx-4 font-bold text-3xl">Estoriteler</a>
+</div> {%else%} <div>
   <a href="/" class="text-white mx-4 font-bold text-3xl">Estoriteler</a>
-</div>
+</div> {% endif %}
 <!--Toggle button (hidden on large screens)-->
 <button @click="isOpen = !isOpen" type="button" class="
         ml-auto
