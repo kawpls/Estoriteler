@@ -1,22 +1,14 @@
 module.exports = {
-  //mode:"jit",
-  purge: {
-    mode: "all",
-    content: ["./**/*.html"],
-    options: {
-      whitelist: [],
-    },
-  },
+
+  content: ["./**/*.html"],
+
   theme: {
-    container: {
-      center: true,
-    },
     extend: {
       colors: {},
     },
   },
-  variants: {},
+
   plugins: [require("@tailwindcss/typography"),
-            require("daisyui"), 
-           ],
+  require("daisyui"),
+  ],
 };
